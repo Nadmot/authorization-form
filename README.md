@@ -1,2 +1,4 @@
-# authorization-form
-My first authorization form
+# Authorization Form
+
+- UI/UX: Figma
+- Markup: HTML, CSS
