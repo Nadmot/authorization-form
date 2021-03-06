@@ -1,93 +1,21 @@
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Bebas+Neue&display=swap" rel="stylesheet">
-<style>
-    body {
-        font-family: 'Akaya Telivigala', cursive;
-        font-family: 'Bebas Neue', cursive;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgba(115, 255, 213, 0.47);
-    }
-
-    .background {
-        width: 630px;
-        height: 475px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .form {
-        background: rgb(255, 255, 255);
-        width: 289px;
-        height: 322px;
-        left: 170PX;
-        top: 77px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 100px 0px;
-    }
-
-    .input {
-        background: rgba(196, 196, 196, 0.9);
-        width: 240px;
-        height: 37px;
-        border-radius: 10px;
-    }
-
-    .button {
-        background: rgba(196, 196, 196, 0.9);
-        width: 76px;
-        height: 37px;
-        margin-bottom: 68px;
-        margin-right: 24px;
-        margin-left: 189px;
-        border-radius: 10px;
-    }
-
-    .second-input {
-        margin-top: 11.46px;
-        margin-bottom: 20.54px;
-        margin-right: 25px;
-        margin-left: 25px;
-    }
-
-    .first-input {
-        margin-right: 25px;
-        margin-left: 25px;
-    }
-
-    .header {
-        width: 100%;
-        margin-top: 62px;
-        text-align: center;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 29px;
-        letter-spacing: 0.1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-</style>
-
-<script>
-    function printFormData() {
-        const login = document.getElementById("login").value
-        const password = document.getElementById("password").value
-        console.log(login)
-        console.log(password)
-    }
-</script>
+<script src="main.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Bebas+Neue&display=swap"
+  rel="stylesheet"
+/>
 
 <div class="background">
-    <div class="form">
-        <p class="header">authorization</p>
-        <input id="login" class="input first-input" placeholder="Enter login">
-        <input id="password" class="input second-input" type="password" placeholder="Enter password">
-        <button class="button" onclick="printFormData()">
-        Confirm
-        </button>
-    </div>
+  <div class="form">
+    <p class="header">authorization</p>
+    <input id="login" class="input first-input" placeholder="Enter login" />
+    <input
+      id="password"
+      class="input second-input"
+      type="password"
+      placeholder="Enter password"
+    />
+    <button class="button" onclick="printFormData()">Confirm</button>
+  </div>
 </div>
