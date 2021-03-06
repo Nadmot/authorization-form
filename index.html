@@ -49,11 +49,22 @@
     }
 </style>
 
+<script>
+    function printFormData() {
+        const login = document.getElementById("login").value
+        console.log(login)
+        const password = document.getElementById("password").value
+        console.log(password)
+    }
+</script>
+
 <div class="background">
     <div class="form">
         <p class="header">authorization</p>
-        <input class="input first-input">
-        <input class="input second-input">
-        <button class="button"></button>
+        <input id="login" class="input first-input">
+        <input id="password" class="input second-input" type="password">
+        <button class="button" onclick="printFormData()">
+
+        </button>
     </div>
 </div>
