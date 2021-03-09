@@ -1,3 +1,4 @@
+</script>
 <script src="main.js"></script>
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -11,23 +12,39 @@
     <p class="header">authorization</p>
     <input
       id="login"
+      onkeyup="checkParams()"
       class="input first-input"
       placeholder="Enter login"
       type="text"
+      utocomplete="off"
     />
     <input
       id="password"
+      onkeyup="checkParams()"
       class="input second-input"
       type="password"
       placeholder="Enter password"
+      utocomplete="off"
     />
-    <button class="button" onclick="printFormData()">Confirm</button>
+    <button
+      class="button"
+      id="button"
+      type="button"
+      onclick="printFormData()"
+      value="Confirm"
+      disabled
+    >
+      Confirm
+    </button>
   </div>
 </div>
 
 <html>
   <head>
+    <script
+  type="text/javascript"
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <title>Authorization</title>
-    <meta name="viewport" content="width=device-width, user-scalable=yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 </html>
