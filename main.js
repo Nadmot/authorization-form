@@ -4,3 +4,13 @@ function printFormData() {
   console.log(login);
   console.log(password);
 }
+
+function checkParams() {
+  var login = $("#login").val();
+  var password = $("#password").val();
+  if (login.length != 0 && password.length != 0) {
+    $("#button").removeAttr("disabled");
+  } else {
+    $("#button").attr("disabled", "disabled");
+  }
+}
