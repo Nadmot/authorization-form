@@ -1,5 +1,4 @@
-</script>
-<script src="main.js"></script>
+<script src="main.js" ></script>
 <link rel="stylesheet" href="style.css" type="text/css" />
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link
@@ -7,7 +6,8 @@
   rel="stylesheet"
 />
 
-<div class="background">
+<div class="background"
+id="background">
   <div class="form">
     <p class="header">authorization</p>
     <input
@@ -27,12 +27,16 @@
       utocomplete="off"
     />
     <button
+      type="submit"
       class="button"
       id="button"
       type="button"
       onclick="printFormData()"
       value="Confirm"
-      disabled
+      class="btn btn-primary" 
+      data-toggle="modal" 
+      data-target="#feedbackFormModal"
+      disabled      
     >
       Confirm
     </button>
@@ -45,6 +49,10 @@
   type="text/javascript"
   src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <title>Authorization</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 </html>
+
+<img src="https://i.gifer.com/VAyR.gif"
+class="spiner"
+id="spiner"
+/>
