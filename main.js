@@ -1,10 +1,7 @@
 function printFormData() {
-  const login = document.getElementById("login").value;
-  const password = document.getElementById("password").value;
-  console.log(login);
-  console.log(password);
+  document.getElementById("background").style.display="none"
+  document.getElementById("spiner").style.display="block"
 }
-
 function checkParams() {
   var login = $("#login").val();
   var password = $("#password").val();
